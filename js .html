@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+
+F NAME:<input type="text" value="username" id="t1"><br><br>
+L NAME:<input type="text" value="password" id="t2"><br><br>
+<input type="text" value="Result" id="r1"><br><br>
+<input type="button" value="add" onclick="f1()">
+<input type="button" value="Multi" onclick="f2()">
+<input type="button" value="sub" onclick="f3()">
+<input type="button" value="div" onclick="f4()">
+<span id="r1"></span>
+<script>
+function f1()
+{
+var obj1=document.getElementById("t1").value;
+
+var obj2=document.getElementById("t2").value;
+
+var sai=document.getElementById("r1").innerHTML=parseInt(obj1)+parseInt(obj2);
+}
+
+function f2()
+{
+var obj1=document.getElementById("t1").value;
+
+var obj2=document.getElementById("t2").value;
+
+var sai=document.getElementById("r1").innerHTML=parseInt(obj1)*parseInt(obj2);
+}
+
+function f3()
+{
+var obj1=document.getElementById("t1").value;
+
+var obj2=document.getElementById("t2").value;
+
+var sai=document.getElementById("r1").innerHTML=parseInt(obj1)-parseInt(obj2);
+}
+
+function f4()
+{
+var obj1=document.getElementById("t1").value;
+
+var obj2=document.getElementById("t2").value;
+
+var sai=document.getElementById("r1").innerHTML=parseInt(obj1)/parseInt(obj2);
+}
+
+</script>
+
+</body>
+
+
+
+
+</html>
